@@ -6,12 +6,33 @@ package com.myspace.discountfunrules;
 
 public class OrderRequest implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public OrderRequest() {
-    }
+	private java.lang.String name;
+	private java.lang.Integer id;
 
+	public OrderRequest() {
+	}
 
+	public java.lang.String getName() {
+		return this.name;
+	}
 
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public java.lang.Integer getId() {
+		return this.id;
+	}
+
+	public void setId(java.lang.Integer id) {
+		this.id = id;
+	}
+
+	public OrderRequest(java.lang.String name, java.lang.Integer id) {
+		this.name = name;
+		this.id = id;
+	}
 
 }
